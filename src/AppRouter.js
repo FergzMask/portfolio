@@ -6,6 +6,7 @@ import Header from "./Pages/Components/Header";
 import Footer from "./Pages/Components/Footer";
 import Works from "./Pages/Components/Works";
 import Work from "./Pages/Components/Work";
+import About from "./Pages/Components/About";
 
 function AppRouter() {
   return (
@@ -18,7 +19,7 @@ function AppRouter() {
             <Route path="/works" element={<Works />}></Route>
             <Route path="/works/:id" element={<Work />} />
 
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
