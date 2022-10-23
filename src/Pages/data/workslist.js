@@ -19,6 +19,10 @@ const worksList = [
     tech3: "Adobe XD",
     tech4: "CSS",
     learnings: "Chitchat",
+    githublogo: "",
+    githublink: "",
+    linklogo: `${imageFolderPath}/link-icon.svg`,
+    projectlink: "",
   },
   {
     name: "capstone",
@@ -36,6 +40,10 @@ const worksList = [
     tech3: "REST API",
     tech4: "SASS",
     learnings: "Chitchat about Capstone",
+    githublogo: `${imageFolderPath}/github-icon.svg`,
+    githublink: "",
+    linklogo: `${imageFolderPath}/link-icon.svg`,
+    projectlink: "",
   },
   {
     name: "portfolio",
@@ -53,6 +61,10 @@ const worksList = [
     tech3: "CSS",
     tech4: "",
     learnings: "Chitchat about the Portfolio",
+    githublogo: `${imageFolderPath}/github-icon.svg`,
+    githublink: "https://github.com/FergzMask/portfolio",
+    linklogo: `${imageFolderPath}/link-icon.svg`,
+    projectlink: "",
   },
   {
     name: "corn",
@@ -70,6 +82,10 @@ const worksList = [
     tech3: "CSS",
     tech4: "",
     learnings: "Chitchat about Corn",
+    githublogo: `${imageFolderPath}/github-icon.svg`,
+    githublink: "https://github.com/FergzMask/corn",
+    linklogo: `${imageFolderPath}/link-icon.svg`,
+    projectlink: "",
   },
 ];
 
