@@ -1,4 +1,5 @@
 import Works from "./Components/Works";
+import Nav from "./Components/Nav";
 import { useEffect } from "react";
 
 const PageHome = () => {

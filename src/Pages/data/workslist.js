@@ -1,7 +1,10 @@
+// import { convertRoutesToDataRoutes } from "@remix-run/router/dist/utils";
+
 const imageFolderPath = process.env.PUBLIC_URL + "./images/";
 
 const worksList = [
   {
+    name: "kardsharp",
     title: "KardSharp Kards",
     coverimage: `${imageFolderPath}/kardsharp.png`,
     projectdescription: "Lorem",
@@ -11,10 +14,15 @@ const worksList = [
     screenshot2description: "LoremIpsum",
     screenshot3: `${imageFolderPath}/kardsharp.png`,
     screenshot3description: "What I learned etc",
+    tech1: "Shopify",
+    tech2: "Liquid",
+    tech3: "Adobe XD",
+    tech4: "CSS",
     learnings: "Chitchat",
   },
   {
-    title: "KardSharp Kards",
+    name: "capstone",
+    title: "Capstone Project",
     coverimage: `${imageFolderPath}/kardsharp.png`,
     projectdescription: "Lorem",
     screenshot1: `${imageFolderPath}/kardsharp.png`,
@@ -23,10 +31,15 @@ const worksList = [
     screenshot2description: "LoremIpsum",
     screenshot3: `${imageFolderPath}/kardsharp.png`,
     screenshot3description: "What I learned etc",
-    learnings: "Chitchat",
+    tech1: "React",
+    tech2: "WordPress",
+    tech3: "REST API",
+    tech4: "SASS",
+    learnings: "Chitchat about Capstone",
   },
   {
-    title: "KardSharp Kards",
+    name: "portfolio",
+    title: "Web Portfolio",
     coverimage: `${imageFolderPath}/kardsharp.png`,
     projectdescription: "Lorem",
     screenshot1: `${imageFolderPath}/kardsharp.png`,
@@ -35,11 +48,16 @@ const worksList = [
     screenshot2description: "LoremIpsum",
     screenshot3: `${imageFolderPath}/kardsharp.png`,
     screenshot3description: "What I learned etc",
-    learnings: "Chitchat",
+    tech1: "React",
+    tech2: "HTML",
+    tech3: "CSS",
+    tech4: "",
+    learnings: "Chitchat about the Portfolio",
   },
   {
-    title: "KardSharp Kards",
-    coverimage: `${imageFolderPath}/kardsharp.png`,
+    name: "corn",
+    title: "Chilliwacky Corn",
+    coverimage: `${imageFolderPath}/corn.png`,
     projectdescription: "Lorem",
     screenshot1: `${imageFolderPath}/kardsharp.png`,
     screenshot1description: "Ipsum",
@@ -47,7 +65,11 @@ const worksList = [
     screenshot2description: "LoremIpsum",
     screenshot3: `${imageFolderPath}/kardsharp.png`,
     screenshot3description: "What I learned etc",
-    learnings: "Chitchat",
+    tech1: "JavaScript",
+    tech2: "HTML",
+    tech3: "CSS",
+    tech4: "",
+    learnings: "Chitchat about Corn",
   },
 ];
 

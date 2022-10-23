@@ -5,6 +5,7 @@ import PageHome from "./Pages/PageHome.js";
 import Header from "./Pages/Components/Header";
 import Footer from "./Pages/Components/Footer";
 import Works from "./Pages/Components/Works";
+import Work from "./Pages/Components/Work";
 
 function AppRouter() {
   return (
@@ -14,9 +15,9 @@ function AppRouter() {
         <main>
           <Routes>
             <Route path="/" exact element={<PageHome />} />
-            <Route path="/works" element={<Works />}>
-              {/* <Route path="/works/:id" element={<Work />} /> */}
-            </Route>
+            <Route path="/works" element={<Works />}></Route>
+            <Route path="/works/:id" element={<Work />} />
+
             {/* <Route path="/about" element={<About />} /> */}
           </Routes>
         </main>
