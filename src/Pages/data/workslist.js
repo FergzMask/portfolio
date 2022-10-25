@@ -1,18 +1,21 @@
-// import { convertRoutesToDataRoutes } from "@remix-run/router/dist/utils";
+import { ReactComponent as LinkedInIcon } from "../Components/linkedin-icon.svg";
+import { ReactComponent as LinkIcon } from "../Components/link-icon.svg";
+import { ReactComponent as GitHubIcon } from "../Components/github-icon.svg";
 
-const imageFolderPath = process.env.PUBLIC_URL + "./images/";
+const imageFolderPath = process.env.PUBLIC_URL + "../images/";
 
 const worksList = [
   {
     name: "kardsharp",
     title: "KardSharp Kards",
-    coverimage: `${imageFolderPath}/kardsharp.png`,
-    projectdescription: "Lorem",
-    screenshot1: `${imageFolderPath}/kardsharp.png`,
+    coverimage: `${imageFolderPath}kardsharp.png`,
+    projectdescription:
+      "Lorem 1-2 lines describing the Project including goals, technology",
+    screenshot1: `${imageFolderPath}kardsharp.png`,
     screenshot1description: "Ipsum",
-    screenshot2: `${imageFolderPath}/kardsharp.png`,
+    screenshot2: `${imageFolderPath}kardsharp.png`,
     screenshot2description: "LoremIpsum",
-    screenshot3: `${imageFolderPath}/kardsharp.png`,
+    screenshot3: `${imageFolderPath}kardsharp.png`,
     screenshot3description: "What I learned etc",
     tech1: "Shopify",
     tech2: "Liquid",
@@ -21,7 +24,7 @@ const worksList = [
     learnings: "Chitchat",
     githublogo: "",
     githublink: "",
-    linklogo: `${imageFolderPath}/link-icon.svg`,
+    linklogo: <LinkIcon />,
     projectlink: "",
   },
   {
@@ -42,7 +45,7 @@ const worksList = [
     learnings: "Chitchat about Capstone",
     githublogo: `${imageFolderPath}/github-icon.svg`,
     githublink: "",
-    linklogo: `${imageFolderPath}/link-icon.svg`,
+    linklogo: <LinkIcon />,
     projectlink: "",
   },
   {
@@ -63,7 +66,7 @@ const worksList = [
     learnings: "Chitchat about the Portfolio",
     githublogo: `${imageFolderPath}/github-icon.svg`,
     githublink: "https://github.com/FergzMask/portfolio",
-    linklogo: `${imageFolderPath}/link-icon.svg`,
+    linklogo: <LinkIcon />,
     projectlink: "",
   },
   {
@@ -84,7 +87,7 @@ const worksList = [
     learnings: "Chitchat about Corn",
     githublogo: `${imageFolderPath}/github-icon.svg`,
     githublink: "https://github.com/FergzMask/corn",
-    linklogo: `${imageFolderPath}/link-icon.svg`,
+    linklogo: <LinkIcon />,
     projectlink: "",
   },
 ];

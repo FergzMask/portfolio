@@ -13,9 +13,33 @@ const Work = () => {
         {worksList
           .filter((singleWork) => singleWork.name === id)
           .map((singleWork, i) => (
-            <div key={i}>
+            <article key={i}>
               <h2>{singleWork.title}</h2>
-            </div>
+              <img
+                src={`${singleWork.coverimage}`}
+                alt="screenshot of webpage"
+                className="works-top-level"
+              />
+              <p>{singleWork.projectdescription}</p>
+              <img
+                src={`${singleWork.screenshot1}`}
+                alt="screenshot of webpage"
+                className="works-second-level"
+              />
+              <p>{singleWork.screenshot1description}</p>
+              <img
+                src={`${singleWork.screenshot2}`}
+                alt="screenshot of webpage"
+                className="works-second-level"
+              />
+              <p>{singleWork.screenshot2description}</p>
+              <img
+                src={`${singleWork.screenshot3}`}
+                alt="screenshot of webpage"
+                className="works-second-level"
+              />
+              <p>{singleWork.screenshot3description}</p>
+            </article>
           ))}
       </div>
     </section>
