@@ -1,9 +1,12 @@
 import Nav from "./Nav";
+import { Link } from "react-router-dom";
 
 const Header = () => (
   <header>
     <Nav />
-    <h1>Sarah Hancock</h1>
+    <Link to="/">
+      <h1>Sarah Hancock</h1>
+    </Link>
   </header>
 );
 

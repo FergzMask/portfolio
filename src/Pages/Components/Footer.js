@@ -1,4 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { ReactComponent as HomeIcon } from "../Components/home-icon.svg";
+
+import { ReactComponent as WorkIcon } from "../Components/work-icon.svg";
+import { ReactComponent as AboutIcon } from "../Components/about-icon.svg";
 
 const imageFolderPath = process.env.PUBLIC_URL + "./images/";
 
@@ -14,19 +18,19 @@ const Footer = () => {
           <li>
             <NavLink to="/">
               Home
-              <img src={`${imageFolderPath}home-icon.svg`} />
+              <HomeIcon />
             </NavLink>
           </li>
           <li>
             <NavLink to="/work">
               Works
-              <img src={`${imageFolderPath}work-icon.svg`} />
+              <WorkIcon />
             </NavLink>
           </li>
           <li>
             <NavLink to="/about">
               About
-              <img src={`${imageFolderPath}about-icon.svg`} />
+              <AboutIcon />
             </NavLink>
           </li>
         </ul>
