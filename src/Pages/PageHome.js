@@ -2,6 +2,7 @@ import Works from "./Components/Works";
 // import Nav from "./Components/Nav";
 import { useEffect } from "react";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 const PageHome = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const PageHome = () => {
       <p>Let me show you what I've been working on!</p>
       <Works />
       <About />
+      <Contact />
     </section>
   );
 };

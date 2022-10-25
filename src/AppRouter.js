@@ -7,6 +7,7 @@ import Footer from "./Pages/Components/Footer";
 import Works from "./Pages/Components/Works";
 import Work from "./Pages/Components/Work";
 import About from "./Pages/Components/About";
+import Contact from "./Pages/Components/Contact";
 
 function AppRouter() {
   return (
@@ -20,6 +21,7 @@ function AppRouter() {
             <Route path="/works/:id" element={<Work />} />
 
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
