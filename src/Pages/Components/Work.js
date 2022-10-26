@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import worksList from "../data/workslist";
 import { ReactComponent as LinkedInIcon } from "../Components/linkedin-icon.svg";
@@ -6,6 +7,7 @@ import { ReactComponent as GitHubIcon } from "../Components/github-icon.svg";
 
 const Work = () => {
   let { id } = useParams();
+  const [github, setGithub] = useState(true);
 
   return (
     <section>
@@ -39,6 +41,9 @@ const Work = () => {
                 className="works-second-level"
               />
               <p>{singleWork.screenshot3description}</p>
+              {/* {`${singleWork.githublink !== ""}` && (
+                <img src={`${(<GitHubIcon />)}`} alt="GitHub icon" />
+              )} */}
             </article>
           ))}
       </div>

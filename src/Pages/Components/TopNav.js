@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Nav() {
+function TopNav() {
   let activeClassName = "highlight";
 
   return (
@@ -51,4 +51,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default TopNav;

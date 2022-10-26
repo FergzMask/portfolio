@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { ReactComponent as HomeIcon } from "../Components/home-icon.svg";
-
+import Nav from "./Nav";
 import { ReactComponent as WorkIcon } from "../Components/work-icon.svg";
 import { ReactComponent as AboutIcon } from "../Components/about-icon.svg";
 
@@ -13,7 +13,8 @@ const Footer = () => {
 
   return (
     <footer>
-      <nav className="navigation" onClick={blur}>
+      <Nav />
+      {/* <nav className="navigation" onClick={blur}>
         <ul>
           <li>
             <NavLink to="/">
@@ -34,7 +35,7 @@ const Footer = () => {
             </NavLink>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </footer>
   );
 };

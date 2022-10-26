@@ -37,9 +37,22 @@
   }
 }
 
+/* Elements */
+
 p {
   color: black;
 }
+
+ul {
+  list-style: none;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Works Page */
 
 .works-top-level {
   height: 10rem;
