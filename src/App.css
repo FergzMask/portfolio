@@ -47,13 +47,40 @@ ul {
   list-style: none;
 }
 
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+svg:hover {
+  fill: red;
+}
+
 /* Links */
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+a:hover .icon {
+  fill: green;
 }
 
 .active {
   color: orange;
+}
+
+/* Header */
+.name-title {
+  font-family: "Arizonia", cursive;
+  font-size: 8rem;
 }
 
 /* Navigation */

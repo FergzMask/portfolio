@@ -9,8 +9,8 @@ const Contact = () => {
           Have an idea for a webpage or interested in working together? Let's
           talk!
         </p>
-        <LinkedInIcon />
-        <EmailIcon />
+        <LinkedInIcon className="icon" />
+        <EmailIcon className="icon" />
       </section>
     </div>
   );

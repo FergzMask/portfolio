@@ -19,7 +19,7 @@ function Nav() {
                 isActive ? activeClassName : undefined
               `}
             >
-              <HomeIcon />
+              <HomeIcon className="icon" />
               Home
             </Link>
           </li>
@@ -31,7 +31,7 @@ function Nav() {
                 isActive ? activeClassName : undefined
               `}
             >
-              <WorkIcon />
+              <WorkIcon className="icon" />
               Works
             </Link>
           </li>
@@ -42,7 +42,7 @@ function Nav() {
                 isActive ? activeClassName : undefined
               `}
             >
-              <AboutIcon />
+              <AboutIcon className="icon" />
               About
             </Link>
           </li>
@@ -53,7 +53,7 @@ function Nav() {
                 isActive ? activeClassName : undefined
               `}
             >
-              <ContactIcon />
+              <ContactIcon className="icon" />
               Contact
             </Link>
           </li>
