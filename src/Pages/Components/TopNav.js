@@ -10,9 +10,9 @@ function TopNav() {
           <li>
             <NavLink
               to="/"
-              className={({ isActive }) =>
+              className={`bottomnav-list-item ({ isActive }) =>
                 isActive ? activeClassName : undefined
-              }
+              `}
             >
               Home
             </NavLink>

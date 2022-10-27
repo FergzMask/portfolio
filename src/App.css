@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+.active {
+  color: orange;
+}
+
 /* Navigation */
 .topnav {
   display: none;
@@ -63,6 +67,13 @@ a {
 .bottomnav-list {
   display: flex;
   flex-direction: row;
+}
+
+.bottomnav-list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
 }
 
 /* Works Page */

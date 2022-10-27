@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 
 const Header = () => (
   <header>
-    <TopNav />
-    <Link to="/">
-      <h1>Sarah Hancock</h1>
-    </Link>
+    <div id="hash-top">
+      <TopNav />
+      <Link to="/#hash-top">
+        <h1>Sarah Hancock</h1>
+      </Link>
+    </div>
   </header>
 );
 

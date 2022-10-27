@@ -12,7 +12,7 @@ const Works = () => {
   }, []);
 
   return (
-    <div className="works-container">
+    <div className="works-container" id="hash-works">
       {workslist.map((singleWork, i) => {
         return (
           //   <Work {...singleWork} key={i} />
