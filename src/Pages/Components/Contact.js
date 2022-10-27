@@ -1,4 +1,5 @@
 import { ReactComponent as LinkedInIcon } from "../Components/linkedin-icon.svg";
+import { ReactComponent as EmailIcon } from "../Components/email-icon.svg";
 
 const Contact = () => {
   return (
@@ -9,6 +10,7 @@ const Contact = () => {
           talk!
         </p>
         <LinkedInIcon />
+        <EmailIcon />
       </section>
     </div>
   );
