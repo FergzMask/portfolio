@@ -1,4 +1,4 @@
-import TopNav from "./Nav";
+import TopNav from "./TopNav";
 import { Link } from "react-router-dom";
 
 const Header = () => (
