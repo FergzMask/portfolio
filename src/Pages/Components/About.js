@@ -9,35 +9,36 @@ const About = () => {
 
   return (
     <div id="hash-about">
-      <h2>About</h2>
       <section>
-        <article>
+        <h2>About</h2>
+
+        <article className="article-about">
           <img
-            src={`${imageFolderPath}/sarah.png`}
+            src={`${imageFolderPath}/sarah.jpg`}
             alt="Sarah smiling and wearing a black shirt"
             className="works-second-level"
           />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            nec neque porta, porttitor libero et, dapibus ipsum. Proin tincidunt
-            nec nisl et lacinia. Quisque vitae mauris nec tellus volutpat
-            placerat non nec urna.{" "}
+            I've had a love for coding since I first discovered I could make
+            webpages to document my hobbies. After a career working in sales,
+            I'm now blending my interests focusing full time on web development
+            with a passion for e-commerce, WordPress and SaaS. I love learning
+            and am always curious to develop new skills and find ways to share
+            information over the web.{" "}
           </p>
-          {/* <img src={`${imageFolderPath}/linkedin-icon.svg`} alt="LinkedIn logo" /> */}
-          {/* <p>Let's get caught up on LinkedIn!</p> */}
         </article>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            nec neque porta, porttitor libero et, dapibus ipsum. Proin tincidunt
-            nec nisl et lacinia. Quisque vitae mauris nec tellus volutpat
-            placerat non nec urna.{" "}
-          </p>
+        <article className="article-about">
           <img
-            src={`${imageFolderPath}/sarah.png`}
-            alt="Sarah smiling and wearing a black shirt"
+            src={`${imageFolderPath}/sarah2.jpg`}
+            alt="Sarah beside a view of the ocean crashing into the beach"
             className="works-second-level"
           />
+          <p>
+            When I'm not studying or working online, I love being active in the
+            outdoors. I enjoy hiking especially and can usually be found
+            wandering the beautiful trails and mountains in the Fraser Valley in
+            my free time.{" "}
+          </p>
         </article>
       </section>
     </div>

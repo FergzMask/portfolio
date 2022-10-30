@@ -18,9 +18,9 @@ const Works = () => {
         return (
           //   <Work {...singleWork} key={i} />
 
-          <section key={i}>
+          <section key={i} className="works-section">
             <Link to={`/works/${singleWork.name}`}>
-              <h3>{singleWork.title}</h3>
+              <h3 className="works-title">{singleWork.title}</h3>
               <div className="image-and-tech">
                 <img
                   src={`${singleWork.coverimage}`}
