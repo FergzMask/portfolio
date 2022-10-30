@@ -9,6 +9,7 @@ const About = () => {
 
   return (
     <div id="hash-about">
+      <h2>About</h2>
       <section>
         <article>
           <img
