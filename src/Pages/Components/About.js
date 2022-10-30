@@ -14,6 +14,7 @@ const About = () => {
           <img
             src={`${imageFolderPath}/sarah.png`}
             alt="Sarah smiling and wearing a black shirt"
+            className="works-second-level"
           />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -34,6 +35,7 @@ const About = () => {
           <img
             src={`${imageFolderPath}/sarah.png`}
             alt="Sarah smiling and wearing a black shirt"
+            className="works-second-level"
           />
         </article>
       </section>

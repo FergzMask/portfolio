@@ -6,7 +6,8 @@ const Header = () => (
     <div id="hash-top">
       <TopNav />
       <Link to="/#hash-top">
-        <h1 className="name-title">Sarah Hancock</h1>
+        <h1 className="name-title">Sarah H.</h1>
+        <h2 className="job-title">Web Developer</h2>
       </Link>
     </div>
   </header>

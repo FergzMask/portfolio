@@ -14,28 +14,6 @@ const Footer = () => {
   return (
     <footer>
       <Nav />
-      {/* <nav className="navigation" onClick={blur}>
-        <ul>
-          <li>
-            <NavLink to="/">
-              Home
-              <HomeIcon />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/work">
-              Works
-              <WorkIcon />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">
-              About
-              <AboutIcon />
-            </NavLink>
-          </li>
-        </ul>
-      </nav> */}
     </footer>
   );
 };

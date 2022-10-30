@@ -18,20 +18,22 @@ const Works = () => {
           //   <Work {...singleWork} key={i} />
 
           <section key={i}>
-            <h3>{singleWork.title}</h3>
-            <img
-              src={`${singleWork.coverimage}`}
-              alt="some text here"
-              className="works-top-level"
-            />
-            <h4>Tech Stack</h4>
-            <ul>
-              <li>{singleWork.tech1}</li>
-              <li>{singleWork.tech2}</li>
-              <li>{singleWork.tech3}</li>
-              <li>{singleWork.tech4}</li>
-            </ul>
-            <Link to={`/works/${singleWork.name}`}>See More</Link>
+            <Link to={`/works/${singleWork.name}`}>
+              <h3>{singleWork.title}</h3>
+              <img
+                src={`${singleWork.coverimage}`}
+                alt="some text here"
+                className="works-top-level"
+              />
+              <h4>Tech Stack</h4>
+              <ul>
+                <li className="original-color">{singleWork.tech1}</li>
+                <li className="original-color">{singleWork.tech2}</li>
+                <li className="original-color">{singleWork.tech3}</li>
+                <li className="original-color">{singleWork.tech4}</li>
+              </ul>
+              <div>See More</div>
+            </Link>
           </section>
         );
       })}
