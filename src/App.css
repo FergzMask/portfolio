@@ -280,6 +280,16 @@ a:hover .icon {
   padding-bottom: 5rem;
 }
 
+.contact-paragraph {
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+}
+
 /* About Page */
 
 .article-about {
@@ -291,4 +301,14 @@ a:hover .icon {
 .article-about img {
   width: 14rem;
   height: auto;
+}
+
+/* Single Work Page */
+.work-cover-image {
+  border-radius: 20px;
+}
+
+.work-small-image {
+  border-radius: 20px;
+  width: 50%;
 }

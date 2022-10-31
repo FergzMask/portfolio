@@ -7,7 +7,7 @@ import { ReactComponent as GitHubIcon } from "../Components/github-icon.svg";
 
 const Work = () => {
   let { id } = useParams();
-  const [github, setGithub] = useState(true);
+  // const [github, setGithub] = useState(true);
 
   return (
     <section>
@@ -20,19 +20,19 @@ const Work = () => {
               <img
                 src={`${singleWork.coverimage}`}
                 alt="screenshot of webpage"
-                className="works-top-level"
+                className="work-cover-image"
               />
               <p>{singleWork.projectdescription}</p>
               <img
                 src={`${singleWork.screenshot1}`}
                 alt="screenshot of webpage"
-                className="works-second-level"
+                className="work-small-image"
               />
               <p>{singleWork.screenshot1description}</p>
               <img
                 src={`${singleWork.screenshot2}`}
                 alt="screenshot of webpage"
-                className="works-second-level"
+                className="work-small-image"
               />
               <p>{singleWork.screenshot2description}</p>
               <img
