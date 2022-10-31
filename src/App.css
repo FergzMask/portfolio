@@ -305,10 +305,10 @@ a:hover .icon {
 
 /* Single Work Page */
 .work-cover-image {
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .work-small-image {
-  border-radius: 20px;
-  width: 50%;
+  /* border-radius: 20px; */
+  /* width: 50%; */
 }
