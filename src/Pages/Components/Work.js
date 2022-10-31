@@ -44,7 +44,10 @@ const Work = () => {
               {/* {`${singleWork.githublink !== ""}` && (
                 <img src={`${(<GitHubIcon />)}`} alt="GitHub icon" />
               )} */}
-              <p>Learnings from this project: {singleWork.learnings}</p>
+              <p>
+                <strong>Learnings from this project:</strong>{" "}
+                {singleWork.learnings}
+              </p>
             </article>
           ))}
       </div>
