@@ -18,7 +18,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <LinkedInIcon className="icon" />
-            Connect via LinkedIn
+            <p>Connect!</p>
           </a>
           <div className="contact-link">
             <EmailIcon
@@ -27,7 +27,7 @@ const Contact = () => {
                 navigator.clipboard.writeText("email");
               }}
             />
-            sarahhancock@shaw.ca
+            <p>Email</p>
           </div>
         </div>
       </section>

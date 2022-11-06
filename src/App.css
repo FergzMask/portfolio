@@ -98,7 +98,7 @@ img {
 }
 
 main {
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 
 footer {
@@ -141,11 +141,22 @@ a:hover {
 
 a:hover .icon {
   fill: #17aee8;
+  transition: all 0.5s ease-in-out;
 }
 
 a:active,
 a:focus {
   color: #e1341e;
+}
+
+.contact-link svg {
+  height: 2.5rem;
+  width: auto;
+  margin-top: 2rem;
+}
+
+.contact-link p {
+  margin-top: 0;
 }
 
 /* Header */
@@ -246,7 +257,6 @@ a:focus {
 @media screen and (min-width: 48em) {
   .topnav {
     display: flex;
-
     justify-content: space-between;
   }
 
@@ -255,7 +265,7 @@ a:focus {
   }
 
   .top-nav-list > li {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
 
   .top-nav-text {
@@ -276,6 +286,29 @@ a:focus {
   .top-h2 {
     font-size: 1.5rem;
     margin-top: 0rem;
+  }
+
+  .top-button-block {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10%;
+  }
+
+  .top-button-block:hover {
+    background-color: #17aee8;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .top-button-block:active {
+    border: 1px solid white;
+  }
+
+  .top-button-block:focus {
+    border: 1px solid #e1341e;
+  }
+
+  .bottomnav {
+    display: none;
   }
 }
 
@@ -357,7 +390,7 @@ a:focus {
 
 @media screen and (min-width: 31.25em) {
   .works-top-level {
-    width: 50rem;
+    width: 70rem;
   }
 
   .image-and-tech {
@@ -434,6 +467,24 @@ a:focus {
   width: 14rem;
   height: auto;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 31.25em) {
+  .article-about img {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .article-about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article-about p {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
 }
 
 /* Single Work Page */

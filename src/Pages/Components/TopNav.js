@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function TopNav() {
   let activeClassName = "highlight";
@@ -12,44 +13,44 @@ function TopNav() {
       <nav>
         <ul className="top-nav-list">
           <li>
-            <NavLink
-              to="/"
-              className={`bottomnav-list-item ({ isActive }) =>
+            <Link
+              to="/#hash-top"
+              className={`top-button-block ({ isActive }) =>
                 isActive ? activeClassName : undefined
               `}
             >
               <p className="top-nav-text">Home</p>
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to="Works"
-              className={({ isActive }) =>
+            <Link
+              to="/#hash-works"
+              className={`top-button-block ({ isActive }) =>
                 isActive ? activeClassName : undefined
-              }
+              `}
             >
               <p className="top-nav-text">Works</p>
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to="About"
-              className={({ isActive }) =>
+            <Link
+              to="/#hash-about"
+              className={`top-button-block ({ isActive }) =>
                 isActive ? activeClassName : undefined
-              }
+              `}
             >
               <p className="top-nav-text">About</p>
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to="Contact"
-              className={({ isActive }) =>
+            <Link
+              to="/#hash-contact"
+              className={`top-button-block ({ isActive }) =>
                 isActive ? activeClassName : undefined
-              }
+              `}
             >
               <p className="top-nav-text">Contact</p>
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>
