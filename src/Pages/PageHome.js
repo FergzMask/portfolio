@@ -11,7 +11,7 @@ const PageHome = () => {
 
   return (
     <div>
-      <section>
+      <section className="intro">
         <p>Hi! It's great to meet you!</p>
         <p>
           I'm a front end developer based in the Fraser Valley. I get a kick out

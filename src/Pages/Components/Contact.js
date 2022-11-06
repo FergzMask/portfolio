@@ -11,17 +11,24 @@ const Contact = () => {
           Interested in working together? Let's talk!
         </p>
         <div className="contact-icons">
-          <Link to="https://www.linkedin.com/in/sarahmhancock/">
+          <a
+            href="https://www.linkedin.com/in/sarahmhancock/"
+            target="_blank"
+            className="contact-link"
+            rel="noreferrer"
+          >
             <LinkedInIcon className="icon" />
             Connect via LinkedIn
-          </Link>
-          <EmailIcon
-            className="icon"
-            onClick={() => {
-              navigator.clipboard.writeText("email");
-            }}
-          />
-          sarahhancock@shaw.ca
+          </a>
+          <div className="contact-link">
+            <EmailIcon
+              className="icon"
+              onClick={() => {
+                navigator.clipboard.writeText("email");
+              }}
+            />
+            sarahhancock@shaw.ca
+          </div>
         </div>
       </section>
     </div>

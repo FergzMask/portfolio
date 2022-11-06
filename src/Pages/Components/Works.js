@@ -14,34 +14,44 @@ const Works = () => {
   return (
     <div className="works-container" id="hash-works">
       <h2>Works</h2>
-      {workslist.map((singleWork, i) => {
-        return (
-          //   <Work {...singleWork} key={i} />
+      <div className="works-center">
+        {workslist.map((singleWork, i) => {
+          return (
+            //   <Work {...singleWork} key={i} />
 
-          <section key={i} className="works-section">
-            <Link to={`/works/${singleWork.name}`}>
-              <h3 className="works-title">{singleWork.title}</h3>
-              <div className="image-and-tech">
-                <img
-                  src={`${singleWork.coverimage}`}
-                  alt="some text here"
-                  className="works-top-level"
-                />
-                <div className="tech-stack">
-                  <h4>Tech Stack</h4>
-                  <ul>
-                    <li className="original-color">{singleWork.tech1}</li>
-                    <li className="original-color">{singleWork.tech2}</li>
-                    <li className="original-color">{singleWork.tech3}</li>
-                    <li className="original-color">{singleWork.tech4}</li>
-                  </ul>
+            <section key={i} className="works-section">
+              <Link to={`/works/${singleWork.name}`}>
+                <h3 className="works-title">{singleWork.title}</h3>
+                <div className="image-and-tech">
+                  <img
+                    src={`${singleWork.coverimage}`}
+                    alt="some text here"
+                    className="works-top-level"
+                  />
+                  <div className="tech-stack">
+                    <h4>Tech Stack</h4>
+                    <ul>
+                      <li className="original-color tech-names">
+                        {singleWork.tech1}
+                      </li>
+                      <li className="original-color tech-names">
+                        {singleWork.tech2}
+                      </li>
+                      <li className="original-color tech-names">
+                        {singleWork.tech3}
+                      </li>
+                      <li className="original-color tech-names">
+                        {singleWork.tech4}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="see-more-button">See More</div>
-            </Link>
-          </section>
-        );
-      })}
+                <div className="see-more-button">See More</div>
+              </Link>
+            </section>
+          );
+        })}
+      </div>
     </div>
   );
 };

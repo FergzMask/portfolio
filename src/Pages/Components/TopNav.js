@@ -5,8 +5,12 @@ function TopNav() {
 
   return (
     <div className="topnav">
+      <div className="nav-titles">
+        <h1 className="top-h1">Sarah H.</h1>
+        <h2 className="top-h2">Web Developer</h2>
+      </div>
       <nav>
-        <ul>
+        <ul className="top-nav-list">
           <li>
             <NavLink
               to="/"
@@ -14,7 +18,7 @@ function TopNav() {
                 isActive ? activeClassName : undefined
               `}
             >
-              Home
+              <p className="top-nav-text">Home</p>
             </NavLink>
           </li>
           <li>
@@ -24,7 +28,7 @@ function TopNav() {
                 isActive ? activeClassName : undefined
               }
             >
-              Works
+              <p className="top-nav-text">Works</p>
             </NavLink>
           </li>
           <li>
@@ -34,7 +38,7 @@ function TopNav() {
                 isActive ? activeClassName : undefined
               }
             >
-              About
+              <p className="top-nav-text">About</p>
             </NavLink>
           </li>
           <li>
@@ -44,7 +48,7 @@ function TopNav() {
                 isActive ? activeClassName : undefined
               }
             >
-              Contact
+              <p className="top-nav-text">Contact</p>
             </NavLink>
           </li>
         </ul>

@@ -20,7 +20,7 @@ function Nav() {
               `}
             >
               <HomeIcon className="icon" />
-              Home
+              <p className="bottom-nav-name">Home</p>
             </Link>
           </li>
           <li>
@@ -32,7 +32,7 @@ function Nav() {
               `}
             >
               <WorkIcon className="icon" />
-              Works
+              <p className="bottom-nav-name">Works</p>
             </Link>
           </li>
           <li>
@@ -43,7 +43,7 @@ function Nav() {
               `}
             >
               <AboutIcon className="icon" />
-              About
+              <p className="bottom-nav-name">About</p>
             </Link>
           </li>
           <li>
@@ -54,7 +54,7 @@ function Nav() {
               `}
             >
               <ContactIcon className="icon" />
-              Contact
+              <p className="bottom-nav-name">Contact</p>
             </Link>
           </li>
         </ul>
