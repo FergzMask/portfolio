@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
 function TopNav() {
@@ -7,8 +7,10 @@ function TopNav() {
   return (
     <div className="topnav">
       <div className="nav-titles">
-        <h1 className="top-h1">Sarah H.</h1>
-        <h2 className="top-h2">Web Developer</h2>
+        <Link to="/">
+          <h1 className="top-h1">Sarah H.</h1>
+          <h2 className="top-h2">Web Developer</h2>
+        </Link>
       </div>
       <nav>
         <ul className="top-nav-list">

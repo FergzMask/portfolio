@@ -24,31 +24,35 @@ const Work = () => {
               />
               <p>{singleWork.projectdescription}</p>
               <h3 className="work-features">Features</h3>
-              <img
-                src={`${singleWork.screenshot1}`}
-                alt="screenshot of webpage"
-                className="work-small-image"
-              />
-              <p>{singleWork.screenshot1description}</p>
-              <img
-                src={`${singleWork.screenshot2}`}
-                alt="screenshot of webpage"
-                className="work-small-image"
-              />
-              <p>{singleWork.screenshot2description}</p>
-              <img
-                src={`${singleWork.screenshot3}`}
-                alt="screenshot of webpage"
-                className="works-second-level"
-              />
-              <p>{singleWork.screenshot3description}</p>
+              <article className="work-features-article">
+                <img
+                  src={`${singleWork.screenshot1}`}
+                  alt="screenshot of webpage"
+                  className="work-small-image"
+                />
+                <p>{singleWork.screenshot1description}</p>
+              </article>
+              <article className="work-features-article">
+                <img
+                  src={`${singleWork.screenshot2}`}
+                  alt="screenshot of webpage"
+                  className="work-small-image"
+                />
+                <p>{singleWork.screenshot2description}</p>
+              </article>
+              <article className="work-features-article">
+                <img
+                  src={`${singleWork.screenshot3}`}
+                  alt="screenshot of webpage"
+                  className="works-small-image"
+                />
+                <p>{singleWork.screenshot3description}</p>
+              </article>
               {/* {`${singleWork.githublink !== ""}` && (
                 <img src={`${(<GitHubIcon />)}`} alt="GitHub icon" />
               )} */}
-              <p>
-                <strong>Learnings from this project:</strong>{" "}
-                {singleWork.learnings}
-              </p>
+              <h4 className="learnings">Learnings from this project: </h4>
+              <p>{singleWork.learnings}</p>
             </article>
           ))}
       </div>

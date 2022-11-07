@@ -56,7 +56,7 @@ const Contact = () => {
             onMouseOver={showInstruction}
             onMouseOut={hideInstruction}
           >
-            <EmailIcon className="icon" />
+            <EmailIcon className="icon relative" />
             <p>Email</p>{" "}
           </div>
           <span className="get-email">

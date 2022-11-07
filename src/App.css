@@ -131,6 +131,17 @@ footer {
 @media screen and (min-width: 48em) {
   main {
     margin-bottom: 0;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 55em) {
+  main {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -156,6 +167,7 @@ a:focus {
 }
 
 /* Header */
+
 .AppRouter {
   padding: 1rem;
 }
@@ -189,6 +201,15 @@ a:focus {
   font-size: 2rem;
   margin-top: 0;
   text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  background-color: #353536;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  padding: 1rem 3rem;
 }
 
 @media screen and (min-width: 48em) {
@@ -442,7 +463,7 @@ a:focus {
   display: flex;
   /* flex-direction: row; */
   justify-content: space-evenly;
-  position: relative;
+  /* position: relative; */
 }
 
 .original-color {
@@ -476,11 +497,15 @@ a:focus {
   fill: #17aee8;
   transition: all 0.5s ease-in-out;
 }
-
+.relative {
+  position: relative;
+}
 .get-email {
   position: absolute;
-  right: -0.5rem;
-  bottom: 3.5rem;
+  /* right: 6rem; */
+  /* left: 10rem; */
+  /* bottom: 0rem;  */
+  /* top: 5rem; */
   z-index: 20;
   color: #1ee196;
 }
@@ -529,15 +554,28 @@ a:focus {
 }
 
 .work-features {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+.work-features-article {
+  margin-bottom: 3rem;
+}
+
+.learnings {
+  padding-left: 0;
 }
 
 .work-small-image {
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
+}
+
+.features-para {
+  /* margin-top: 0rem;
+  margin-bottom: 3rem; */
 }
 
 /* Home Page */
 .intro {
-  margin-top: 5rem;
+  margin-top: 12rem;
   /* margin-bottom: 10rem; */
 }

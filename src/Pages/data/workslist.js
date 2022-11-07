@@ -17,8 +17,9 @@ const worksList = [
     screenshot2: `${imageFolderPath}/tweeling-2.png`,
     screenshot2description:
       "Advanced Custom Fields gave us the flexibility we needed to gather information in a logical way to display on the page.",
-    screenshot3: `${imageFolderPath}/tweeling-1.png`,
-    screenshot3description: "What I learned etc",
+    screenshot3: `${imageFolderPath}/tweeling-3.png`,
+    screenshot3description:
+      "With 4 of us working on the site, pushing code and completing pull requests, we were able to work really efficently.",
     tech1: "WordPress",
     tech2: "Woocommerce",
     tech3: "SASS",

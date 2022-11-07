@@ -2,7 +2,7 @@ import TopNav from "./TopNav";
 import { Link } from "react-router-dom";
 
 const Header = () => (
-  <header>
+  <header className="fixed">
     <div id="hash-top">
       <Link to="/#hash-top" className="disappearing-title">
         <h1 className="name-title">Sarah H.</h1>

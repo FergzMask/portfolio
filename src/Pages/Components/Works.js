@@ -1,10 +1,6 @@
-// import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import workslist from "../data/workslist";
-import Work from "./Work";
 import { Link } from "react-router-dom";
-
-// const imageFolderPath = process.env.PUBLIC_URL + "./images/";
 
 const Works = () => {
   useEffect(() => {
@@ -17,8 +13,6 @@ const Works = () => {
       <div className="works-center">
         {workslist.map((singleWork, i) => {
           return (
-            //   <Work {...singleWork} key={i} />
-
             <section key={i} className="works-section">
               <Link to={`/works/${singleWork.name}`}>
                 <h3 className="works-title">{singleWork.title}</h3>
