@@ -10,7 +10,7 @@ const Work = () => {
   // const [github, setGithub] = useState(true);
 
   return (
-    <section>
+    <section className="work-page">
       <div>
         {worksList
           .filter((singleWork) => singleWork.name === id)

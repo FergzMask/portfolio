@@ -33,20 +33,25 @@ const worksList = [
   },
   {
     name: "portfolio",
-    title: "Web Portfolio",
-    coverimage: `${imageFolderPath}/kardsharp.png`,
-    projectdescription: "Lorem",
-    screenshot1: `${imageFolderPath}/kardsharp.png`,
-    screenshot1description: "Ipsum",
-    screenshot2: `${imageFolderPath}/kardsharp.png`,
-    screenshot2description: "LoremIpsum",
-    screenshot3: `${imageFolderPath}/kardsharp.png`,
-    screenshot3description: "What I learned etc",
+    title: "sarahhancock.ca - Web Portfolio",
+    coverimage: `${imageFolderPath}/portfolio.png`,
+    projectdescription:
+      "This portfolio site showcases a number of skills I learned in the BCIT Front End Web Development Program.  Without technical requirements for this project, the design and development are completely up to me!",
+    screenshot1: `${imageFolderPath}/portfolio-1.png`,
+    screenshot1description:
+      "Starting with wireframes in Adobe XD, I laid out a plan for my design.  I set out to create a simple layout that showcased my projects primarily.",
+    screenshot2: `${imageFolderPath}/portfolio-2.png`,
+    screenshot2description:
+      "I created the site mobile-first and I liked having the opportunity to use a button bar at the bottom for navigation.",
+    screenshot3: `${imageFolderPath}/portfolio-3.png`,
+    screenshot3description:
+      "Using React let me create pages dynamically, saving a lot of time and creating consistency through the projects I chose to showcase.",
     tech1: "React",
     tech2: "HTML",
     tech3: "CSS",
     tech4: "Adobe XD",
-    learnings: "Chitchat about the Portfolio",
+    learnings:
+      "I wanted to make this site using React so I could get a lot more practice and familiarity with the framework.  I did have some challenges trying to make everything work as I had intended but I was able to include more than I had anticipated given my timeline.  I'm looking forward to continuing to work on the site as I continue to develop my skills.",
     githublogo: `${imageFolderPath}/github-icon.svg`,
     githublink: "https://github.com/FergzMask/portfolio",
     linklogo: <LinkIcon />,
