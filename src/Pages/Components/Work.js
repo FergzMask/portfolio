@@ -16,13 +16,14 @@ const Work = () => {
           .filter((singleWork) => singleWork.name === id)
           .map((singleWork, i) => (
             <article key={i}>
-              <h2>{singleWork.title}</h2>
+              <h2 className="work-title">{singleWork.title}</h2>
               <img
                 src={`${singleWork.coverimage}`}
                 alt="screenshot of webpage"
                 className="work-cover-image"
               />
               <p>{singleWork.projectdescription}</p>
+              <h3 className="work-features">Features</h3>
               <img
                 src={`${singleWork.screenshot1}`}
                 alt="screenshot of webpage"

@@ -16,7 +16,7 @@ const worksList = [
       "Wireframes for this page were created collaboratively using Adobe XD as our group worked remotely, as needed.  To start, we made mobile and desktop mockups and once the foundation for the project was set, we experimented with some different colour schemes and layouts before settling on the final design.  From here, we made full-colour, high fidelity mockups to guide our development.",
     screenshot2: `${imageFolderPath}/tweeling-2.png`,
     screenshot2description:
-      "A pop-up modal is used to give instructions to the user for playing the game.",
+      "Advanced Custom Fields gave us the flexibility we needed to gather information in a logical way to display on the page.",
     screenshot3: `${imageFolderPath}/tweeling-1.png`,
     screenshot3description: "What I learned etc",
     tech1: "WordPress",

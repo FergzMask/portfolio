@@ -1,8 +1,38 @@
 import { ReactComponent as LinkedInIcon } from "../Components/linkedin-icon.svg";
 import { ReactComponent as EmailIcon } from "../Components/email-icon.svg";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Contact = () => {
+  const [copySuccessMessage, setCopySuccessMessage] = useState("");
+  const [instructions, setInstructions] = useState("");
+  const email = "sarahhancock@shaw.ca";
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCopySuccessMessage("");
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [copySuccessMessage]);
+
+  function copyEmail() {
+    navigator.clipboard.writeText(email);
+    setCopySuccessMessage("Email copied!");
+    setInstructions("");
+  }
+
+  function showInstruction() {
+    if (copySuccessMessage) {
+      return;
+    }
+    // setInstructions(`click to copy ${email}`);
+    setInstructions("Copy email?");
+  }
+
+  function hideInstruction() {
+    setInstructions("");
+  }
+
   return (
     <div id="hash-contact">
       <h2>Contact</h2>
@@ -18,17 +48,20 @@ const Contact = () => {
             rel="noreferrer"
           >
             <LinkedInIcon className="icon" />
-            <p>Connect!</p>
+            <p>LinkedIn</p>
           </a>
-          <div className="contact-link">
-            <EmailIcon
-              className="icon"
-              onClick={() => {
-                navigator.clipboard.writeText("email");
-              }}
-            />
-            <p>Email</p>
+          <div
+            className="contact-link email"
+            onClick={copyEmail}
+            onMouseOver={showInstruction}
+            onMouseOut={hideInstruction}
+          >
+            <EmailIcon className="icon" />
+            <p>Email</p>{" "}
           </div>
+          <span className="get-email">
+            {copySuccessMessage} {instructions}
+          </span>
         </div>
       </section>
     </div>
