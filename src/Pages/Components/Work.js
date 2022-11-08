@@ -19,7 +19,7 @@ const Work = () => {
               <h2 className="work-title">{singleWork.title}</h2>
               <img
                 src={`${singleWork.coverimage}`}
-                alt="screenshot of webpage"
+                alt={`${singleWork.coverimagealt}`}
                 className="work-cover-image"
               />
               <p>{singleWork.projectdescription}</p>
@@ -27,7 +27,7 @@ const Work = () => {
               <article className="work-features-article">
                 <img
                   src={`${singleWork.screenshot1}`}
-                  alt="screenshot of webpage"
+                  alt={`${singleWork.ss1alt}`}
                   className="work-small-image"
                 />
                 <p>{singleWork.screenshot1description}</p>
@@ -35,7 +35,7 @@ const Work = () => {
               <article className="work-features-article">
                 <img
                   src={`${singleWork.screenshot2}`}
-                  alt="screenshot of webpage"
+                  alt={`${singleWork.ss2alt}`}
                   className="work-small-image"
                 />
                 <p>{singleWork.screenshot2description}</p>
@@ -43,8 +43,8 @@ const Work = () => {
               <article className="work-features-article">
                 <img
                   src={`${singleWork.screenshot3}`}
-                  alt="screenshot of webpage"
-                  className="works-small-image"
+                  alt={`${singleWork.ss3alt}`}
+                  className="work-small-image"
                 />
                 <p>{singleWork.screenshot3description}</p>
               </article>
