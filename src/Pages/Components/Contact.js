@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Contact = () => {
+  // code to create copy option for email adapted from https://sophiali.dev/copy-email-address-on-click-react
   const [copySuccessMessage, setCopySuccessMessage] = useState("");
   const [instructions, setInstructions] = useState("");
   const email = "sarahhancock@shaw.ca";
 
+  // copied message disappears after 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setCopySuccessMessage("");
@@ -15,17 +17,18 @@ const Contact = () => {
     return () => clearTimeout(timer);
   }, [copySuccessMessage]);
 
+  // give an alert when email address has been copied to clipboard
   function copyEmail() {
     navigator.clipboard.writeText(email);
     setCopySuccessMessage("Email copied!");
     setInstructions("");
   }
 
+  // popup to let the user know what to do next
   function showInstruction() {
     if (copySuccessMessage) {
       return;
     }
-    // setInstructions(`click to copy ${email}`);
     setInstructions("Copy email?");
   }
 
@@ -51,17 +54,17 @@ const Contact = () => {
             <p>LinkedIn</p>
           </a>
           <div
-            className="contact-link email"
+            className="contact-link email relative"
             onClick={copyEmail}
             onMouseOver={showInstruction}
             onMouseOut={hideInstruction}
           >
-            <EmailIcon className="icon relative" />
+            <EmailIcon className="icon" />
             <p>Email</p>{" "}
+            <span className="get-email">
+              {copySuccessMessage} {instructions}
+            </span>
           </div>
-          <span className="get-email">
-            {copySuccessMessage} {instructions}
-          </span>
         </div>
       </section>
     </div>

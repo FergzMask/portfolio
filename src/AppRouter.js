@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import "./Normalize.css";
 import "./App.css";
@@ -13,7 +14,7 @@ import Contact from "./Pages/Components/Contact";
 function AppRouter() {
   return (
     <div className="AppRouter">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <main>
           <Routes>

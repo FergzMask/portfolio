@@ -8,16 +8,16 @@ const worksList = [
   {
     name: "tweeling",
     title: "Tweeling Bakery",
-    coverimage: `${imageFolderPath}/tweeling.png`,
+    coverimage: `${imageFolderPath}tweeling.png`,
     projectdescription:
       "Tweeling Bakery is an e-commerce page for a fictional restaurant operating in Vancouver.  The site was developed using Woocommerce/WordPress in collaboration with 3 of my classmates from the Front End Web Developer program at BCIT.",
-    screenshot1: `${imageFolderPath}/tweeling-1.png`,
+    screenshot1: `${imageFolderPath}tweeling-1.png`,
     screenshot1description:
       "Wireframes for this page were created collaboratively using Adobe XD as our group worked remotely, as needed.  To start, we made mobile and desktop mockups and once the foundation for the project was set, we experimented with some different colour schemes and layouts before settling on the final design.  From here, we made full-colour, high fidelity mockups to guide our development.",
-    screenshot2: `${imageFolderPath}/tweeling-2.png`,
+    screenshot2: `${imageFolderPath}tweeling-2.png`,
     screenshot2description:
       "Advanced Custom Fields gave us the flexibility we needed to gather information in a logical way to display on the page.",
-    screenshot3: `${imageFolderPath}/tweeling-3.png`,
+    screenshot3: `${imageFolderPath}tweeling-3.png`,
     screenshot3description:
       "With 4 of us working on the site, pushing code and completing pull requests, we were able to work really efficently.",
     tech1: "WordPress",
@@ -26,7 +26,7 @@ const worksList = [
     tech4: "Adobe XD",
     learnings:
       "The Tweeling Bakery site was very helpful to get experience working with WordPress to design a fully functional, ready to launch e-commerce page.  Working as a group to design and develop Tweeling collaboratively using Git and GitHub also allowed for a lot of practice communicating via Slack as we each completed our parts and integrated them into the final deliverable.",
-    githublogo: `${imageFolderPath}/github-icon.svg`,
+    githublogo: `${imageFolderPath}github-icon.svg`,
     githublink: "https://github.com/htpwebdesign/tweeling-bakery",
     linklogo: <LinkIcon />,
     projectlink: "https://tweelingbakery.bcitwebdeveloper.ca/",
@@ -34,16 +34,16 @@ const worksList = [
   {
     name: "portfolio",
     title: "sarahhancock.ca - Web Portfolio",
-    coverimage: `${imageFolderPath}/portfolio.png`,
+    coverimage: `${imageFolderPath}portfolio.png`,
     projectdescription:
       "This portfolio site showcases a number of skills I learned in the BCIT Front End Web Development Program.  Without technical requirements for this project, the design and development are completely up to me!",
-    screenshot1: `${imageFolderPath}/portfolio-1.png`,
+    screenshot1: `${imageFolderPath}portfolio-1.png`,
     screenshot1description:
       "Starting with wireframes in Adobe XD, I laid out a plan for my design.  I set out to create a simple layout that showcased my projects primarily.",
-    screenshot2: `${imageFolderPath}/portfolio-2.png`,
+    screenshot2: `${imageFolderPath}portfolio-2.png`,
     screenshot2description:
       "I created the site mobile-first and I liked having the opportunity to use a button bar at the bottom for navigation.",
-    screenshot3: `${imageFolderPath}/portfolio-3.png`,
+    screenshot3: `${imageFolderPath}portfolio-3.png`,
     screenshot3description:
       "Using React let me create pages dynamically, saving a lot of time and creating consistency through the projects I chose to showcase.",
     tech1: "React",
@@ -52,7 +52,7 @@ const worksList = [
     tech4: "Adobe XD",
     learnings:
       "I wanted to make this site using React so I could get a lot more practice and familiarity with the framework.  I did have some challenges trying to make everything work as I had intended but I was able to include more than I had anticipated given my timeline.  I'm looking forward to continuing to work on the site as I continue to develop my skills.",
-    githublogo: `${imageFolderPath}/github-icon.svg`,
+    githublogo: `${imageFolderPath}github-icon.svg`,
     githublink: "https://github.com/FergzMask/portfolio",
     linklogo: <LinkIcon />,
     projectlink: "",
@@ -60,16 +60,16 @@ const worksList = [
   {
     name: "corn",
     title: "Chilliwacky Corn",
-    coverimage: `${imageFolderPath}/corn.png`,
+    coverimage: `${imageFolderPath}corn.png`,
     projectdescription:
       "Chilliwacky Corn is an original JavaScript game where the user has to guess a sequence of numbers correctly to win the game.",
-    screenshot1: `${imageFolderPath}/corn-2.png`,
+    screenshot1: `${imageFolderPath}corn-2.png`,
     screenshot1description:
       "The user selects their guesses in these dropdown menus and when they press the Submit button, their guess is entered as an array and compared to the random array generated at the start of the game.  Feedback is given to the user so they can prepare their next guess.",
-    screenshot2: `${imageFolderPath}/corn-1.png`,
+    screenshot2: `${imageFolderPath}corn-1.png`,
     screenshot2description:
       "A pop-up modal shows the user instructions about how to play the game.",
-    screenshot3: `${imageFolderPath}/corn-3.png`,
+    screenshot3: `${imageFolderPath}corn-3.png`,
     screenshot3description:
       "When the user correctly guesses the secret code or they've exceeded the number of tries, the game ends with a unique 'Game Over' message with an option to restart or end the game.",
     tech1: "JavaScript",
@@ -78,7 +78,7 @@ const worksList = [
     tech4: "Git/GitHub",
     learnings:
       "Creating this game was a fun way to practice my JavaScript skills.  I was really challenged by figuring out how to compare the two arrays in order to validate the user's guess.  I liked designing a game theme around the code-break concept and trying to make a game that I would like to play.",
-    githublogo: `${imageFolderPath}/github-icon.svg`,
+    githublogo: `${imageFolderPath}github-icon.svg`,
     githublink: "https://github.com/FergzMask/corn",
     linklogo: <LinkIcon />,
     projectlink: "https://www.sarahhancock.ca/corn",

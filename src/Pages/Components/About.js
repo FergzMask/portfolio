@@ -14,7 +14,7 @@ const About = () => {
 
         <article className="article-about">
           <img
-            src={`${imageFolderPath}/sarah.jpg`}
+            src={`${imageFolderPath}sarah.jpeg`}
             alt="Sarah smiling and wearing a black shirt"
             className="works-second-level"
           />
@@ -29,7 +29,7 @@ const About = () => {
         </article>
         <article className="article-about">
           <img
-            src={`${imageFolderPath}/sarah2.jpg`}
+            src={`${imageFolderPath}sarah2.jpeg`}
             alt="Sarah beside a view of the ocean crashing into the beach"
             className="works-second-level"
           />

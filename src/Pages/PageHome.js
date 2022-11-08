@@ -9,7 +9,7 @@ const PageHome = () => {
   }, []);
 
   return (
-    <div>
+    <div id="hash-top">
       <section className="intro">
         <p>Hi! It's great to meet you!</p>
         <p>

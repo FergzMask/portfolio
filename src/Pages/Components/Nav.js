@@ -3,7 +3,7 @@ import { ReactComponent as HomeIcon } from "../Components/home-icon.svg";
 import { ReactComponent as WorkIcon } from "../Components/work-icon.svg";
 import { ReactComponent as AboutIcon } from "../Components/about-icon.svg";
 import { ReactComponent as ContactIcon } from "../Components/contact-icon.svg";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 function Nav() {
   let activeClassName = "highlight";
@@ -13,7 +13,7 @@ function Nav() {
       <nav>
         <ul className="bottomnav-list">
           <li>
-            <Link
+            <HashLink
               to="/#hash-top"
               className={`bottomnav-list-item ({ isActive }) =>
                 isActive ? activeClassName : undefined
@@ -21,11 +21,10 @@ function Nav() {
             >
               <HomeIcon className="icon" />
               <p className="bottom-nav-name">Home</p>
-            </Link>
+            </HashLink>
           </li>
           <li>
-            <Link
-              // to="Works"
+            <HashLink
               to="/#hash-works"
               className={`bottomnav-list-item ({ isActive }) =>
                 isActive ? activeClassName : undefined
@@ -33,10 +32,10 @@ function Nav() {
             >
               <WorkIcon className="icon" />
               <p className="bottom-nav-name">Works</p>
-            </Link>
+            </HashLink>
           </li>
           <li>
-            <Link
+            <HashLink
               to="/#hash-about"
               className={`bottomnav-list-item ({ isActive }) =>
                 isActive ? activeClassName : undefined
@@ -44,10 +43,10 @@ function Nav() {
             >
               <AboutIcon className="icon" />
               <p className="bottom-nav-name">About</p>
-            </Link>
+            </HashLink>
           </li>
           <li>
-            <Link
+            <HashLink
               to="/#hash-contact"
               className={`bottomnav-list-item ({ isActive }) =>
                 isActive ? activeClassName : undefined
@@ -55,7 +54,7 @@ function Nav() {
             >
               <ContactIcon className="icon" />
               <p className="bottom-nav-name">Contact</p>
-            </Link>
+            </HashLink>
           </li>
         </ul>
       </nav>

@@ -14,7 +14,7 @@ const Works = () => {
         {workslist.map((singleWork, i) => {
           return (
             <section key={i} className="works-section">
-              <Link to={`/works/${singleWork.name}`}>
+              <Link to={`/works/${singleWork.name}#hash-work`}>
                 <h3 className="works-title">{singleWork.title}</h3>
                 <div className="image-and-tech">
                   <img

@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 function TopNav() {
   let activeClassName = "highlight";
@@ -7,52 +7,57 @@ function TopNav() {
   return (
     <div className="topnav">
       <div className="nav-titles">
-        <Link to="/">
+        <HashLink
+          to="/#hash-top"
+          className={`({ isActive }) =>
+                isActive ? className : undefined
+              `}
+        >
           <h1 className="top-h1">Sarah H.</h1>
           <h2 className="top-h2">Web Developer</h2>
-        </Link>
+        </HashLink>
       </div>
       <nav>
         <ul className="top-nav-list">
           <li>
-            <Link
+            <HashLink
               to="/#hash-top"
               className={`top-button-block ({ isActive }) =>
-                isActive ? activeClassName : undefined
-              `}
+              isActive ? className : undefined
+            `}
             >
               <p className="top-nav-text">Home</p>
-            </Link>
+            </HashLink>
           </li>
           <li>
-            <Link
+            <HashLink
               to="/#hash-works"
               className={`top-button-block ({ isActive }) =>
-                isActive ? activeClassName : undefined
+                isActive ? className : undefined
               `}
             >
               <p className="top-nav-text">Works</p>
-            </Link>
+            </HashLink>
           </li>
           <li>
-            <Link
+            <HashLink
               to="/#hash-about"
               className={`top-button-block ({ isActive }) =>
-                isActive ? activeClassName : undefined
+                isActive ? className : undefined
               `}
             >
               <p className="top-nav-text">About</p>
-            </Link>
+            </HashLink>
           </li>
           <li>
-            <Link
+            <HashLink
               to="/#hash-contact"
               className={`top-button-block ({ isActive }) =>
-                isActive ? activeClassName : undefined
+                isActive ? className : undefined
               `}
             >
               <p className="top-nav-text">Contact</p>
-            </Link>
+            </HashLink>
           </li>
         </ul>
       </nav>
