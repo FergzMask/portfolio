@@ -14,7 +14,7 @@ import Contact from "./Pages/Components/Contact";
 function AppRouter() {
   return (
     <div className="AppRouter">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Header />
         <main>
           <Routes>
