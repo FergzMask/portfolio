@@ -101,11 +101,10 @@ main {
 }
 
 footer {
-  background-color: #353536;
+  /* background-color: #353536; */
   position: fixed;
   bottom: 0;
   left: 0;
-
   width: 100%;
   margin: 0 auto;
   border-top: 1px solid white;
@@ -211,20 +210,110 @@ a:focus {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 51.44em) {
   .disappearing-title {
     display: none;
   }
 
   .fixed {
     position: sticky;
-    background-color: #353536;
     width: 100%;
     top: 0;
     z-index: 5;
-    padding: 1rem 3rem;
-    padding-bottom: 0;
+    padding: 1rem 3rem, 0;
+    /* padding-bottom: 0; */
     overflow: hidden;
+  }
+}
+
+/* Light Mode */
+
+.light {
+  background-color: #fff;
+}
+
+.light header {
+  background-color: #fff;
+}
+
+.light footer {
+  background-color: #fff;
+  border-top: 1px solid #3c3c3c;
+}
+
+.light .original-color,
+.light .darktext,
+.light .name-title,
+.light .top-h1,
+/* .light .bottomnav-list-item, */
+.light h2,
+.light p {
+  color: black;
+}
+
+.light .darktext:hover {
+  background-color: #1746e8;
+  color: white;
+}
+
+.light .top-button-block:hover {
+  background-color: #1746e8;
+}
+
+.light .top-nav-text:hover {
+  color: white;
+}
+
+.light .icon {
+  fill: black;
+}
+
+.light h3,
+.light h4,
+.light h5 {
+  color: #1746e8;
+}
+
+.light a:hover .icon,
+.light .email .icon:hover {
+  fill: #1746e8;
+}
+
+.light .get-email {
+  color: #1746e8;
+}
+
+.light .works-top-level {
+  border: 2px solid #1746e8;
+}
+
+.light .see-more-button {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+
+.light .see-more-button:active,
+.light .see-more-button:focus,
+.light .see-more-button:hover {
+  border: 2px solid #1746e8;
+  color: white;
+  background-color: #1746e8;
+}
+
+/* .light .works-container > h2, */
+.light .works-section {
+  border-bottom: 2px solid #1746e8;
+}
+
+.light .work-cover-image,
+.light .work-small-image {
+  border: 2px solid #1746e8;
+}
+
+@media screen and (min-width: 51.44em) {
+  .light .darktext {
+    color: black;
   }
 }
 
@@ -238,8 +327,9 @@ a:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  padding: 0 1rem;
 }
 
 .bottomnav-list-item {
@@ -247,7 +337,7 @@ a:focus {
   flex-direction: column;
   padding-top: 0.5rem;
   align-items: center;
-  color: white;
+  /* color: white; */
 }
 
 #hash-top {
@@ -264,8 +354,25 @@ a:focus {
   margin: 0;
 }
 
-.light {
-  background-color: white;
+.darktext {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 8px;
+  border-radius: 10%;
+}
+
+.darktext:hover {
+  background-color: #17aee8;
+  transition: background-color 0.5s ease-in-out;
+}
+
+header {
+  background-color: #353536;
 }
 
 @media screen and (min-width: 31.25em) {
@@ -278,7 +385,7 @@ a:focus {
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 51.44em) {
   .topnav {
     display: flex;
     justify-content: space-between;
@@ -418,7 +525,7 @@ a:focus {
 }
 
 .works-container > h2 {
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
   padding-bottom: 1rem;
   margin-bottom: 0;
 }
@@ -553,15 +660,24 @@ a:focus {
   fill: #17aee8;
   transition: all 0.5s ease-in-out;
 }
+
 .relative {
   position: relative;
 }
+
 .get-email {
   position: absolute;
-  right: -6rem;
-  top: 3rem;
+  right: -1.4rem;
+  top: -1rem;
   z-index: 20;
   color: #1ee196;
+}
+
+@media screen and (min-width: 31.25em) {
+  .get-email {
+    right: -6rem;
+    top: 2.7rem;
+  }
 }
 
 @media screen and (min-width: 68.75em) {

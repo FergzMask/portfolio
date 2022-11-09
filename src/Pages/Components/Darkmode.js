@@ -9,16 +9,20 @@ function Darkmode({}) {
   };
 
   useEffect(() => {
-    if (theme == true) {
-      document.body.classList.add("light");
+    let darkmode = document.getElementsByClassName("AppRouter");
+    if (theme === true) {
+      darkmode[0].classList.add("light");
     } else {
-      document.body.classList.remove("light");
+      darkmode[0].classList.remove("light");
     }
   });
 
   return (
     <div>
-      <span onClick={handleClick}>{theme ? <DarkIcon /> : <LightIcon />}</span>
+      {/* <span onClick={handleClick}>{theme ? <DarkIcon /> : <LightIcon />}</span> */}
+      <span className="darktext" onClick={handleClick}>
+        {theme ? "Dark Mode" : "Light Mode"}
+      </span>
 
       {/* <span>Light and Dark Theme</span> */}
     </div>

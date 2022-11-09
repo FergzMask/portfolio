@@ -10,11 +10,13 @@ import Works from "./Pages/Components/Works";
 import Work from "./Pages/Components/Work";
 import About from "./Pages/Components/About";
 import Contact from "./Pages/Components/Contact";
+import ScrollTop from "./Pages/Components/ScrollTop";
 
 function AppRouter() {
   return (
-    <div className="AppRouter" theme="true">
+    <div className="AppRouter">
       <BrowserRouter>
+        <ScrollTop />
         <Header />
         <main>
           <Routes>
