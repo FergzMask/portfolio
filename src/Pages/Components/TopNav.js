@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import Darkmode from "./Darkmode";
 import { HashLink } from "react-router-hash-link";
 
 function TopNav() {
@@ -58,6 +59,9 @@ function TopNav() {
             >
               <p className="top-nav-text">Contact</p>
             </HashLink>
+          </li>
+          <li>
+            <Darkmode />
           </li>
         </ul>
       </nav>

@@ -13,7 +13,7 @@ import Contact from "./Pages/Components/Contact";
 
 function AppRouter() {
   return (
-    <div className="AppRouter">
+    <div className="AppRouter" theme="true">
       <BrowserRouter>
         <Header />
         <main>
