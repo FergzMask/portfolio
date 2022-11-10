@@ -4,6 +4,8 @@ import { ReactComponent as WorkIcon } from "../Components/work-icon.svg";
 import { ReactComponent as AboutIcon } from "../Components/about-icon.svg";
 import { ReactComponent as ContactIcon } from "../Components/contact-icon.svg";
 import { HashLink } from "react-router-hash-link";
+import Darkmode from "./Darkmode";
+import { ReactComponent as LightIcon } from "../Components/lightmode.svg";
 
 function Nav() {
   let activeClassName = "highlight";
@@ -55,6 +57,10 @@ function Nav() {
               <ContactIcon className="icon" />
               <p className="bottom-nav-name">Contact</p>
             </HashLink>
+          </li>
+          <li className="light-icon-container">
+            <LightIcon className="light-icon" />
+            <Darkmode />
           </li>
         </ul>
       </nav>

@@ -23,8 +23,6 @@ function Darkmode({}) {
       <span className="darktext" onClick={handleClick}>
         {theme ? "Dark Mode" : "Light Mode"}
       </span>
-
-      {/* <span>Light and Dark Theme</span> */}
     </div>
   );
 }
