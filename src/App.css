@@ -246,18 +246,28 @@ a:focus {
 .light .name-title,
 .light .top-h1,
 /* .light .bottomnav-list-item, */
-.light h2,
-.light p {
+.light .bottom-nav-name,
+.light p,
+.light h2 {
   color: black;
 }
 
 .light .darktext:hover {
-  background-color: #1746e8;
+  /* background-color: #1746e8; */
   color: white;
+}
+
+.light .light-icon-container p:hover {
+  background-color: white;
+  color: black;
 }
 
 .light .top-button-block:hover {
   background-color: #1746e8;
+}
+
+.light .top-nav-text {
+  color: black;
 }
 
 .light .top-nav-text:hover {
@@ -282,6 +292,16 @@ a:focus {
 .light .get-email {
   color: #1746e8;
 }
+
+.light .darktext:hover .light-icon-container .cancel-dark,
+.light .darktext:hover .light-icon-container .cancel-light {
+  fill: #1746e8;
+  transition: fill 0.5s ease-in-out;
+}
+
+/* .light .cancel-light:hover {
+  fill: #1746e8;
+} */
 
 .light .works-top-level {
   border: 2px solid #1746e8;
@@ -311,9 +331,29 @@ a:focus {
   border: 2px solid #1746e8;
 }
 
+@media screen and (min-width: 31.25em) {
+  .light .cancel-dark {
+    position: relative;
+    top: 1px;
+    right: 3px;
+  }
+}
+
 @media screen and (min-width: 51.44em) {
-  .light .darktext {
+  /* .light .darktext {
     color: black;
+  } */
+
+  .light .top-button-block:hover p {
+    color: white;
+  }
+
+  .light .light-icon-container p {
+    color: black;
+  }
+
+  .light .light-icon-container {
+    /* background-color: #1746e8; */
   }
 }
 
@@ -326,9 +366,7 @@ a:focus {
 .bottomnav-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
+  justify-content: space-around;
   padding: 0 1rem;
 }
 
@@ -337,7 +375,6 @@ a:focus {
   flex-direction: column;
   padding-top: 0.5rem;
   align-items: center;
-  /* color: white; */
 }
 
 .light-icon-container {
@@ -347,25 +384,20 @@ a:focus {
   cursor: pointer;
 }
 
-.light-icon-container .darktext {
+.light-icon-container p {
   position: relative;
-  top: 1px;
+  top: 2px;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
 }
 
-.light-icon-container .darktext:hover {
-  background-color: #353536;
-  fill: white;
-}
-
-.light-icon-container:hover .light-icon {
-  fill: #17aee8;
+.light-icon-container:hover .cancel-dark {
+  fill: #1746e8;
   transition: all 0.5s ease-in-out;
 }
-
-/* .light-icon:hover {
-  fill: #17aee8;
-  transition: all 0.5s ease-in-out;
-} */
 
 #hash-top {
   padding-top: 120px;
@@ -373,11 +405,10 @@ a:focus {
 }
 
 .icon {
-  /* fill: #17aee8; */
   fill: white;
 }
 
-.light-icon {
+.cancel-light {
   fill: white;
 }
 
@@ -385,21 +416,9 @@ a:focus {
   margin: 0;
 }
 
-.darktext {
-  font-family: "PT Sans", sans-serif;
-  font-size: 1.1rem;
-  color: white;
-  letter-spacing: 0.02rem;
-  line-height: 1.5;
-  cursor: pointer;
-  display: inline-block;
-  /* padding: 20px 8px; */
-  border-radius: 10%;
-}
-
-.darktext:hover {
-  background-color: #17aee8;
-  transition: background-color 0.5s ease-in-out;
+.light-icon-container:hover .cancel-light {
+  fill: #17aee8;
+  transition: fill 0.5s ease-in-out;
 }
 
 header {
@@ -407,8 +426,14 @@ header {
 }
 
 @media screen and (min-width: 31.25em) {
-  .bottomnav-list-item {
+  .bottomnav-list-item,
+  .light-icon-container {
     flex-direction: row;
+  }
+
+  .light-icon-container p {
+    top: 6px;
+    padding-left: 0.75rem;
   }
 
   .bottom-nav-name {
@@ -417,10 +442,44 @@ header {
 }
 
 @media screen and (min-width: 51.44em) {
-  .darktext {
+  .light-icon-container p {
+    padding-left: 0;
     font-size: 1.2rem;
-    padding: 20px 8px;
-    border-radius: 10%;
+    position: relative;
+    top: 0px;
+  }
+
+  .light-icon-container {
+    padding: 21px 10px 21px 10px;
+  }
+
+  .light-icon-container:hover {
+    position: relative;
+    top: 0px;
+    /* margin: 1rem; */
+    /* padding: 21px 10px 21px 10px; */
+    border-radius: 10px;
+    background-color: #17aee8;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .light .light-icon-container:hover {
+    background-color: #1746e8;
+  }
+
+  .light .light-icon-container:hover p {
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  /* .light-icon-container:hover p {
+    top: 0;
+  } */
+
+  .cancel-light,
+  .cancel-dark {
+    display: none;
   }
 
   .topnav {
@@ -438,6 +497,7 @@ header {
 
   .top-nav-text {
     letter-spacing: 0.04rem;
+    color: white;
   }
 
   .nav-titles {

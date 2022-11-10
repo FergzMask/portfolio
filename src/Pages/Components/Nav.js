@@ -58,8 +58,8 @@ function Nav() {
               <p className="bottom-nav-name">Contact</p>
             </HashLink>
           </li>
-          <li className="light-icon-container">
-            <LightIcon className="light-icon" />
+          <li>
+            {/* <LightIcon className="light-icon" /> */}
             <Darkmode />
           </li>
         </ul>
