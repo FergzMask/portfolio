@@ -43,9 +43,9 @@ const worksList = [
     tech4: "Adobe XD",
     learnings:
       "The Tweeling Bakery site was very helpful to get experience working with WordPress to design a fully functional, ready to launch e-commerce page.  Working as a group to design and develop Tweeling collaboratively using Git and GitHub also allowed for a lot of practice communicating via Slack as we each completed our parts and integrated them into the final deliverable.",
-    githublogo: `${imageFolderPath}github-icon.svg`,
+
     githublink: "https://github.com/htpwebdesign/tweeling-bakery",
-    linklogo: <LinkIcon />,
+
     projectlink: "https://tweelingbakery.bcitwebdeveloper.ca/",
   },
   {
@@ -87,10 +87,10 @@ const worksList = [
     tech4: "Adobe XD",
     learnings:
       "I wanted to make this site using React so I could get a lot more practice and familiarity with the framework.  I did have some challenges trying to make everything work as I had intended but I was able to include more than I had anticipated given my timeline.  I'm looking forward to continuing to work on the site as I continue to develop my skills.",
-    githublogo: `${imageFolderPath}github-icon.svg`,
+
     githublink: "https://github.com/FergzMask/portfolio",
-    linklogo: <LinkIcon />,
-    projectlink: "",
+
+    projectlink: "null",
   },
   {
     name: "corn",
@@ -131,9 +131,9 @@ const worksList = [
     tech4: "Git/GitHub",
     learnings:
       "Creating this game was a fun way to practice my JavaScript skills.  I was really challenged by figuring out how to compare the two arrays in order to validate the user's guess.  I liked designing a game theme around the code-break concept and trying to make a game that I would like to play.",
-    githublogo: `${imageFolderPath}github-icon.svg`,
+
     githublink: "https://github.com/FergzMask/corn",
-    linklogo: <LinkIcon />,
+
     projectlink: "https://www.sarahhancock.ca/corn",
   },
   {
@@ -176,10 +176,10 @@ const worksList = [
     tech4: "Git/GitHub",
     learnings:
       "Developing this site using the Shopify platform gave me the opportunity to see the inside workings of an e-commerce store.  Working with Liquid code was new to me too so I'm looking forward to getting more experience with this so I can customize sites more indepth.",
-    githublogo: "",
-    githublink: "",
-    linklogo: <LinkIcon />,
-    projectlink: "",
+
+    githublink: "null",
+
+    projectlink: "https://kardsharp.myshopify.com",
   },
 ];
 

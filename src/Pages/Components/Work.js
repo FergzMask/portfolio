@@ -4,10 +4,24 @@ import worksList from "../data/workslist";
 import { ReactComponent as LinkedInIcon } from "../Components/linkedin-icon.svg";
 import { ReactComponent as LinkIcon } from "../Components/link-icon.svg";
 import { ReactComponent as GitHubIcon } from "../Components/github-icon.svg";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   let { id } = useParams();
-  // const [github, setGithub] = useState(true);
+  // let githubexist = singleWork.githublink;
+
+  // const githuboption = () => {
+  //   if (githubexist !== null) {
+  //     return (
+  //       <div className="github">
+  //         <GitHubIcon />
+  //         <Link to={`${singleWork.githublink}`}>GitHub</Link>
+  //       </div>
+  //     );
+  //   } else {
+  //     return;
+  //   }
+  // };
 
   return (
     <section className="work-page" id="hash-work">
@@ -69,6 +83,35 @@ const Work = () => {
               )} */}
               <h4 className="learnings">Learnings from this project: </h4>
               <p>{singleWork.learnings}</p>
+
+              {singleWork.githublink !== "null" ? (
+                <div className="github">
+                  <a
+                    href={singleWork.githublink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <GitHubIcon />
+                    GitHub
+                  </a>
+                </div>
+              ) : null}
+
+              {singleWork.projectlink !== "null" ? (
+                <div className="github">
+                  <a
+                    href={singleWork.projectlink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <LinkIcon />
+                    Website
+                    {singleWork.name === "kardsharp" ? (
+                      <p className="password">Password: shotha</p>
+                    ) : null}
+                  </a>
+                </div>
+              ) : null}
             </article>
           ))}
       </div>
