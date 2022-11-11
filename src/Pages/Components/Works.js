@@ -18,8 +18,12 @@ const Works = () => {
                 <h3 className="works-title">{singleWork.title}</h3>
                 <div className="image-and-tech">
                   <img
+                    sizes="(max-width: 1080px) 100vw, 1080px"
+                    srcset={`${singleWork.coverimagesrcset500} 500w,
+                              ${singleWork.coverimagesrcset826} 826w,
+                              ${singleWork.coverimagesrcset1080} 1080w`}
                     src={`${singleWork.coverimage}`}
-                    alt="some text here"
+                    alt={`${singleWork.coverimagealt}`}
                     className="works-top-level"
                   />
                   <div className="tech-stack">

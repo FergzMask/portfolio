@@ -18,6 +18,10 @@ const Work = () => {
             <article key={i}>
               <h2 className="work-title">{singleWork.title}</h2>
               <img
+                sizes="(max-width: 1080px) 100vw, 1080px"
+                srcset={`${singleWork.coverimagesrcset500} 500w,
+                        ${singleWork.coverimagesrcset826} 826w,
+                        ${singleWork.coverimagesrcset1080} 1080w`}
                 src={`${singleWork.coverimage}`}
                 alt={`${singleWork.coverimagealt}`}
                 className="work-cover-image"
@@ -26,6 +30,10 @@ const Work = () => {
               <h3 className="work-features">Features</h3>
               <article className="work-features-article">
                 <img
+                  sizes="(max-width: 1080px) 100vw, 1080px"
+                  srcset={`${singleWork.ss1srcset500} 500w,
+                        ${singleWork.ss1srcset826} 826w,
+                        ${singleWork.ss1srcset1080} 1080w`}
                   src={`${singleWork.screenshot1}`}
                   alt={`${singleWork.ss1alt}`}
                   className="work-small-image"
@@ -34,6 +42,10 @@ const Work = () => {
               </article>
               <article className="work-features-article">
                 <img
+                  sizes="(max-width: 1019px) 100vw, 1019px"
+                  srcset={`${singleWork.ss2srcset500} 500w,
+                      ${singleWork.ss2srcset826} 826w,
+                      ${singleWork.ss2srcset1019} 1019w`}
                   src={`${singleWork.screenshot2}`}
                   alt={`${singleWork.ss2alt}`}
                   className="work-small-image"
@@ -42,6 +54,10 @@ const Work = () => {
               </article>
               <article className="work-features-article">
                 <img
+                  sizes="(max-width: 1080px) 100vw, 1080px"
+                  srcset={`${singleWork.ss3srcset500} 500w,
+                      ${singleWork.ss3srcset826} 826w,
+                      ${singleWork.ss3srcset1080} 1080w`}
                   src={`${singleWork.screenshot3}`}
                   alt={`${singleWork.ss3alt}`}
                   className="work-small-image"
