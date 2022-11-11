@@ -33,7 +33,7 @@ const Work = () => {
               <h2 className="work-title">{singleWork.title}</h2>
               <img
                 sizes="(max-width: 1080px) 100vw, 1080px"
-                srcset={`${singleWork.coverimagesrcset500} 500w,
+                srcSet={`${singleWork.coverimagesrcset500} 500w,
                         ${singleWork.coverimagesrcset826} 826w,
                         ${singleWork.coverimagesrcset1080} 1080w`}
                 src={`${singleWork.coverimage}`}
@@ -45,7 +45,7 @@ const Work = () => {
               <article className="work-features-article">
                 <img
                   sizes="(max-width: 1080px) 100vw, 1080px"
-                  srcset={`${singleWork.ss1srcset500} 500w,
+                  srcSet={`${singleWork.ss1srcset500} 500w,
                         ${singleWork.ss1srcset826} 826w,
                         ${singleWork.ss1srcset1080} 1080w`}
                   src={`${singleWork.screenshot1}`}
@@ -57,7 +57,7 @@ const Work = () => {
               <article className="work-features-article">
                 <img
                   sizes="(max-width: 1019px) 100vw, 1019px"
-                  srcset={`${singleWork.ss2srcset500} 500w,
+                  srcSet={`${singleWork.ss2srcset500} 500w,
                       ${singleWork.ss2srcset826} 826w,
                       ${singleWork.ss2srcset1080} 1019w`}
                   src={`${singleWork.screenshot2}`}
@@ -69,7 +69,7 @@ const Work = () => {
               <article className="work-features-article">
                 <img
                   sizes="(max-width: 1080px) 100vw, 1080px"
-                  srcset={`${singleWork.ss3srcset500} 500w,
+                  srcSet={`${singleWork.ss3srcset500} 500w,
                       ${singleWork.ss3srcset826} 826w,
                       ${singleWork.ss3srcset1080} 1080w`}
                   src={`${singleWork.screenshot3}`}
@@ -78,40 +78,41 @@ const Work = () => {
                 />
                 <p>{singleWork.screenshot3description}</p>
               </article>
-              {/* {`${singleWork.githublink !== ""}` && (
-                <img src={`${(<GitHubIcon />)}`} alt="GitHub icon" />
-              )} */}
+
               <h4 className="learnings">Learnings from this project: </h4>
               <p>{singleWork.learnings}</p>
+              <div className="contact-icons">
+                {singleWork.githublink !== "null" ? (
+                  <div className="contact-link">
+                    <a
+                      href={singleWork.githublink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="contact-link"
+                    >
+                      <GitHubIcon className="icon" />
+                      <p>GitHub</p>
+                    </a>
+                  </div>
+                ) : null}
 
-              {singleWork.githublink !== "null" ? (
-                <div className="github">
-                  <a
-                    href={singleWork.githublink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <GitHubIcon />
-                    GitHub
-                  </a>
-                </div>
-              ) : null}
-
-              {singleWork.projectlink !== "null" ? (
-                <div className="github">
-                  <a
-                    href={singleWork.projectlink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <LinkIcon />
-                    Website
-                    {singleWork.name === "kardsharp" ? (
-                      <p className="password">Password: shotha</p>
-                    ) : null}
-                  </a>
-                </div>
-              ) : null}
+                {singleWork.projectlink !== "null" ? (
+                  <div>
+                    <a
+                      href={singleWork.projectlink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="contact-link"
+                    >
+                      <LinkIcon className="icon" />
+                      <p>Website</p>
+                      {singleWork.name === "kardsharp" ? (
+                        <p className="password">Password: shotha</p>
+                      ) : null}
+                    </a>
+                  </div>
+                ) : null}
+              </div>
             </article>
           ))}
       </div>

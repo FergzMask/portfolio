@@ -19,7 +19,7 @@ const Works = () => {
                 <div className="image-and-tech">
                   <img
                     sizes="(max-width: 1080px) 100vw, 1080px"
-                    srcset={`${singleWork.coverimagesrcset500} 500w,
+                    srcSet={`${singleWork.coverimagesrcset500} 500w,
                               ${singleWork.coverimagesrcset826} 826w,
                               ${singleWork.coverimagesrcset1080} 1080w`}
                     src={`${singleWork.coverimage}`}
