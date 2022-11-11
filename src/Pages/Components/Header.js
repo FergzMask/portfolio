@@ -8,7 +8,9 @@ const Header = () => (
     </a>
     {/* <div id="hash-top"> */}
     <HashLink to="/#hash-top" className="disappearing-title">
-      <h1 className="name-title">Sarah H.</h1>
+      <i>
+        <h1 className="name-title">Sarah Hancock</h1>
+      </i>
       <h2 className="job-title">Web Developer</h2>
     </HashLink>
     <TopNav />

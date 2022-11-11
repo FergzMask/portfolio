@@ -45,7 +45,7 @@ const Work = () => {
                   sizes="(max-width: 1019px) 100vw, 1019px"
                   srcset={`${singleWork.ss2srcset500} 500w,
                       ${singleWork.ss2srcset826} 826w,
-                      ${singleWork.ss2srcset1019} 1019w`}
+                      ${singleWork.ss2srcset1080} 1019w`}
                   src={`${singleWork.screenshot2}`}
                   alt={`${singleWork.ss2alt}`}
                   className="work-small-image"

@@ -14,7 +14,7 @@ function TopNav() {
                 isActive ? className : undefined
               `}
         >
-          <h1 className="top-h1">Sarah H.</h1>
+          <h1 className="top-h1">Sarah Hancock</h1>
           <h2 className="top-h2">Web Developer</h2>
         </HashLink>
       </div>

@@ -69,14 +69,14 @@ const worksList = [
     screenshot2: `${imageFolderPath}portfolio-2.png`,
     ss2srcset500: `${imageFolderPath}portfolio-2w_500.png`,
     ss2srcset826: `${imageFolderPath}portfolio-2w_826.png`,
-    ss2srcset1019: `${imageFolderPath}portfolio-2.png`,
+    ss2srcset1080: `${imageFolderPath}portfolio-2.png`,
     ss2alt: "Screenshot of the mobile view of my portfolio site",
     screenshot2description:
       "I created the site mobile-first and I liked having the opportunity to use a button bar at the bottom for navigation.",
     screenshot3: `${imageFolderPath}portfolio-3.png`,
     ss3srcset500: `${imageFolderPath}portfolio-3w_500.png`,
     ss3srcset826: `${imageFolderPath}portfolio-3w_826.png`,
-    ss3srcset1080: `${imageFolderPath}portfolio-3w1080.png`,
+    ss3srcset1080: `${imageFolderPath}portfolio-3w_1080.png`,
     ss3alt:
       "Screenshot from VS Code showing the code written to create the dynamic Works page of my portfolio site",
     screenshot3description:
