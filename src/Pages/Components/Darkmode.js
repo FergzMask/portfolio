@@ -18,13 +18,6 @@ function Darkmode() {
   });
 
   return (
-    // <div>
-
-    //   <span className="darktext" onClick={handleClick}>
-    //     {theme ? "Dark Mode" : "Light Mode"}
-    //   </span>
-    // </div>
-
     <div className="darktext" onClick={handleClick}>
       {theme ? (
         <div className="light-icon-container">

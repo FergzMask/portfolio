@@ -1,15 +1,11 @@
-import { NavLink } from "react-router-dom";
 import { ReactComponent as HomeIcon } from "../Components/home-icon.svg";
 import { ReactComponent as WorkIcon } from "../Components/work-icon.svg";
 import { ReactComponent as AboutIcon } from "../Components/about-icon.svg";
 import { ReactComponent as ContactIcon } from "../Components/contact-icon.svg";
 import { HashLink } from "react-router-hash-link";
 import Darkmode from "./Darkmode";
-import { ReactComponent as LightIcon } from "../Components/lightmode.svg";
 
 function Nav() {
-  let activeClassName = "highlight";
-
   return (
     <div className="bottomnav">
       <nav>
@@ -59,7 +55,6 @@ function Nav() {
             </HashLink>
           </li>
           <li>
-            {/* <LightIcon className="light-icon" /> */}
             <Darkmode />
           </li>
         </ul>

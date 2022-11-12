@@ -1,6 +1,5 @@
 import { ReactComponent as LinkedInIcon } from "../Components/linkedin-icon.svg";
 import { ReactComponent as EmailIcon } from "../Components/email-icon.svg";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Contact = () => {
@@ -38,7 +37,7 @@ const Contact = () => {
 
   return (
     <div id="hash-contact">
-      <h2>Contact</h2>
+      <h2 className="shadow">Contact</h2>
       <section>
         <p className="contact-paragraph">
           Interested in working together? Let's talk!

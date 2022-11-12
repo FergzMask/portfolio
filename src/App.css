@@ -1,47 +1,4 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 /* Elements */
-
-/* p {
-  color: black;
-} */
 
 ul {
   list-style: none;
@@ -57,7 +14,6 @@ h1 {
 }
 
 h2 {
-  /* font-family: "Arizonia", cursive; */
   font-family: "Cabin", sans-serif;
   font-size: 3rem;
   text-align: left;
@@ -147,6 +103,7 @@ footer {
 }
 
 /* Links */
+
 a {
   text-decoration: none;
   color: white;
@@ -200,6 +157,10 @@ a:focus {
   text-align: center;
 }
 
+.shadow {
+  text-shadow: 0.5px 0.5px rgb(28, 2, 190), -1.5px 0 2px #000;
+}
+
 /* skip link code borrowed from: https://levelup.gitconnected.com/build-an-accessible-skip-to-content-anchor-link-with-react-140903f3bd7e */
 .skip-nav {
   margin-right: 1rem;
@@ -224,7 +185,6 @@ a:focus {
     top: 0;
     z-index: 5;
     padding: 1rem 3rem, 0;
-    /* padding-bottom: 0; */
     overflow: hidden;
   }
 }
@@ -248,15 +208,13 @@ a:focus {
 .light .darktext,
 .light .name-title,
 .light .top-h1,
-/* .light .bottomnav-list-item, */
 .light .bottom-nav-name,
 .light p,
 .light h2 {
-  color: black;
+  color: #353536;
 }
 
 .light .darktext:hover {
-  /* background-color: #1746e8; */
   color: white;
 }
 
@@ -302,10 +260,6 @@ a:focus {
   transition: fill 0.5s ease-in-out;
 }
 
-/* .light .cancel-light:hover {
-  fill: #1746e8;
-} */
-
 .light .works-top-level {
   border: 2px solid #666666;
 }
@@ -324,7 +278,6 @@ a:focus {
   background-color: #1746e8;
 }
 
-/* .light .works-container > h2, */
 .light .works-section {
   border-bottom: 2px solid #666666;
 }
@@ -332,6 +285,10 @@ a:focus {
 .light .work-cover-image,
 .light .work-small-image {
   border: 2px solid #666666;
+}
+
+.light .shadow {
+  text-shadow: none;
 }
 
 @media screen and (min-width: 31.25em) {
@@ -343,10 +300,6 @@ a:focus {
 }
 
 @media screen and (min-width: 51.44em) {
-  /* .light .darktext {
-    color: black;
-  } */
-
   .light .top-button-block:hover p {
     color: white;
   }
@@ -355,8 +308,14 @@ a:focus {
     color: black;
   }
 
-  .light .light-icon-container {
-    /* background-color: #1746e8; */
+  .light .light-icon-container:hover {
+    background-color: #1746e8;
+  }
+
+  .light .light-icon-container:hover p {
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
   }
 }
 
@@ -415,10 +374,6 @@ a:focus {
   fill: white;
 }
 
-/* .cancel-dark {
-  fill: white;
-} */
-
 .bottom-nav-name {
   margin: 0;
 }
@@ -463,20 +418,8 @@ header {
   .light-icon-container:hover {
     position: relative;
     top: 0px;
-    /* margin: 1rem; */
-    /* padding: 21px 10px 21px 10px; */
     border-radius: 10px;
     background-color: #17aee8;
-    transition: background-color 0.5s ease-in-out;
-  }
-
-  .light .light-icon-container:hover {
-    background-color: #1746e8;
-  }
-
-  .light .light-icon-container:hover p {
-    color: white;
-    background-color: transparent;
     transition: background-color 0.5s ease-in-out;
   }
 
@@ -557,22 +500,12 @@ header {
 }
 
 /* Home Page */
+
 .intro {
   margin-top: 6rem;
 }
 
-@media screen and (min-width: 48.25em) {
-  .intro {
-    /* margin-top: 12rem; */
-  }
-}
-
 /* Works Page */
-
-#hash-works {
-  /* padding-top: 100px;
-  margin-top: -100px; */
-}
 
 .image-and-tech {
   display: flex;
@@ -630,7 +563,6 @@ header {
 }
 
 .works-container > h2 {
-  /* border-bottom: 1px solid white; */
   padding-bottom: 1rem;
   margin-bottom: 0;
 }
@@ -655,9 +587,6 @@ header {
     flex-direction: column;
   }
 
-  .image-and-tech > img {
-  }
-
   .tech-names {
     font-size: 1.2rem;
   }
@@ -673,6 +602,13 @@ header {
   }
 }
 
+@media screen and (min-width: 51.44em) {
+  #hash-works {
+    padding-top: 120px;
+    margin-top: -120px;
+  }
+}
+
 @media screen and (min-width: 68.75em) {
   #hash-works {
     padding-top: 100px;
@@ -681,6 +617,7 @@ header {
 }
 
 /* Single Work Page */
+
 #hash-work {
   padding-top: 500px;
   margin-top: -500px;
@@ -688,7 +625,7 @@ header {
 
 .work-title {
   margin: 3rem auto 2rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .work-cover-image {
@@ -726,6 +663,7 @@ header {
 }
 
 /* Contact Page */
+
 #hash-contact {
   padding-top: 150px;
   margin-top: -150px;
@@ -758,6 +696,7 @@ header {
 
 .contact-link p {
   margin-top: 0;
+  text-align: center;
 }
 
 .contact-paragraph {
@@ -814,14 +753,16 @@ header {
   margin-bottom: 2rem;
 }
 
-#hash-about {
-  /* padding-top: 100px;
-  margin-top: -100px; */
-}
-
 @media screen and (min-width: 31.25em) {
   .article-about img {
     width: 20rem;
+  }
+}
+
+@media screen and (min-width: 51.44em) {
+  #hash-about {
+    padding-top: 105px;
+    margin-top: -105px;
   }
 }
 

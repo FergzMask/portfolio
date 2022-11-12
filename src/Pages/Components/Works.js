@@ -1,15 +1,10 @@
-import { useEffect } from "react";
 import workslist from "../data/workslist";
 import { Link } from "react-router-dom";
 
 const Works = () => {
-  useEffect(() => {
-    document.title = `Sarah H - Works`;
-  }, []);
-
   return (
     <div className="works-container" id="hash-works">
-      <h2>Works</h2>
+      <h2 className="works shadow">Works</h2>
       <div className="works-center">
         {workslist.map((singleWork, i) => {
           return (

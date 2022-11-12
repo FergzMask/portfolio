@@ -1,10 +1,7 @@
-// import { Link } from "react-router-dom";
 import Darkmode from "./Darkmode";
 import { HashLink } from "react-router-hash-link";
 
 function TopNav() {
-  let activeClassName = "highlight";
-
   return (
     <div className="topnav">
       <div className="nav-titles">
@@ -14,8 +11,8 @@ function TopNav() {
                 isActive ? className : undefined
               `}
         >
-          <h1 className="top-h1">Sarah Hancock</h1>
-          <h2 className="top-h2">Web Developer</h2>
+          <h1 className="top-h1 shadow">Sarah Hancock</h1>
+          <h2 className="top-h2 shadow">Web Developer</h2>
         </HashLink>
       </div>
       <nav>

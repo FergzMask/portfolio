@@ -1,22 +1,17 @@
-import { useEffect } from "react";
-
 const imageFolderPath = process.env.PUBLIC_URL + "./images/";
 
 const About = () => {
-  useEffect(() => {
-    document.title = `Sarah H - About`;
-  }, []);
-
   return (
     <div id="hash-about">
       <section>
-        <h2>About</h2>
+        <h2 className="shadow">About</h2>
 
         <article className="article-about">
           <img
             src={`${imageFolderPath}sarah.jpeg`}
             alt="Sarah smiling and wearing a black shirt"
             className="works-second-level"
+            loading="lazy"
           />
           <p>
             I've had a love for coding since I first discovered I could make
@@ -32,6 +27,7 @@ const About = () => {
             src={`${imageFolderPath}sarah2.jpeg`}
             alt="Sarah beside a view of the ocean crashing into the beach"
             className="works-second-level"
+            loading="lazy"
           />
           <p>
             When I'm not studying or working online, I love being active in the
