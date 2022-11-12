@@ -297,6 +297,10 @@ a:focus {
     top: 1px;
     right: 3px;
   }
+
+  .light .light-icon-container p {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 51.44em) {
@@ -396,6 +400,7 @@ header {
   .light-icon-container p {
     top: 6px;
     padding-left: 0.75rem;
+    font-size: 1.2rem;
   }
 
   .bottom-nav-name {
@@ -406,7 +411,6 @@ header {
 @media screen and (min-width: 51.44em) {
   .light-icon-container p {
     padding-left: 0;
-    font-size: 1.2rem;
     position: relative;
     top: 0px;
   }
