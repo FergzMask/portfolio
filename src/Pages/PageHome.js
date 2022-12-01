@@ -1,12 +1,31 @@
 import Works from "./Components/Works";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import Scroll from "./Components/Scroll";
 
 const PageHome = () => {
   useEffect(() => {
     document.title = `Sarah H - Web Developer`;
   }, []);
+
+  // const [isVisible, setIsVisible] = useState(false);
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", listenToScroll);
+  //   return () => window.removeEventListener("scroll", listenToScroll);
+  // }, []);
+
+  // const listenToScroll = () => {
+  //   let heightToHideFrom = 200;
+  //   const winScroll = window.scrollY;
+
+  //   if (winScroll > heightToHideFrom) {
+  //     isVisible && setIsVisible(false);
+  //   } else {
+  //     setIsVisible(true);
+  //   }
+  // };
 
   return (
     <div id="hash-top">
@@ -20,6 +39,7 @@ const PageHome = () => {
         <Works />
         <About />
         <Contact />
+        {/* {isVisible && <Scroll />} */}
       </section>
     </div>
   );

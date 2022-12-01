@@ -9,16 +9,14 @@ import Work from "./Pages/Components/Work";
 import About from "./Pages/Components/About";
 import Contact from "./Pages/Components/Contact";
 import ScrollTop from "./Pages/Components/ScrollTop";
-import ReactGA from "react-ga";
-import RouteChangeTracker from "./RouteChangeTracker";
-
-const TRACKING_ID = "G-20YS0M7Y4T"; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
 
 function AppRouter() {
+  window.dataLayer.push({
+    event: "pageview",
+  });
+
   return (
     <div className="AppRouter">
-      <RouteChangeTracker />
       <BrowserRouter>
         <ScrollTop />
         <Header />
