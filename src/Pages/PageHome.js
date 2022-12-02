@@ -9,6 +9,7 @@ const PageHome = () => {
     document.title = `Sarah H - Web Developer`;
   }, []);
 
+  // code borrowed from https://codepen.io/pradeep-selva/pen/ZEevrar
   // const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {

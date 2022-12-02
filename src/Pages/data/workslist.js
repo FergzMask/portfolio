@@ -39,8 +39,8 @@ const worksList = [
     tech4: "Adobe XD",
     learnings:
       "The Tweeling Bakery site was very helpful to get experience working with WordPress and Woocommerce to design a fully functional, ready to launch e-commerce page.  Our group also used Trello to organize our workflow and I worked on breaking down tasks and charting their progress to completion to help keep us organized and have visibility on outstanding items.",
-    githublink: "null",
-    // githublink: "https://github.com/htpwebdesign/tweeling-bakery", githublink to be activated when repo is made public or when I'm hosting it
+    // githublink: "null",
+    githublink: "https://github.com/htpwebdesign/tweeling-bakery",
     projectlink: "https://tweelingbakery.bcitwebdeveloper.ca/",
   },
   {
