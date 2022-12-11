@@ -279,7 +279,7 @@ a:focus {
 }
 
 .light .works-section {
-  border-bottom: 2px solid #666666;
+  /* border-bottom: 2px solid #666666; */
 }
 
 .light .work-cover-image,
@@ -579,7 +579,7 @@ header {
 }
 
 .works-section {
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
   padding-bottom: 2rem;
   position: relative;
 }
@@ -645,7 +645,7 @@ header {
 }
 
 .work-small-image {
-  border: 2px white solid;
+  /* border: 2px white solid; */
 }
 
 .work-features {
@@ -653,7 +653,7 @@ header {
 }
 
 .work-features-article {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .learnings {
