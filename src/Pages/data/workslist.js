@@ -64,7 +64,7 @@ const worksList = [
     screenshot2: `${imageFolderPath}portfolio-2.png`,
     ss2srcset500: `${imageFolderPath}portfolio-2w_500.png`,
     ss2srcset826: `${imageFolderPath}portfolio-2w_826.png`,
-    ss2srcset1080: `${imageFolderPath}portfolio-2.png`,
+    ss2srcset1080: `${imageFolderPath}portfolio-2w_1080.png`,
     ss2alt: "Screenshot of the mobile view of my portfolio site",
     screenshot2description:
       "I created the site mobile-first and I wanted to use a button bar at the bottom for navigation.  One of my final additions to the navbar was an option to change the theme from Dark to Light which required a LOT of styling.",
